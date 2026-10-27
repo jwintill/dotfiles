@@ -2,10 +2,10 @@
 I installed Arch Linux on my laptop in June 2026 and I've added my own customizations as I've gone. The main philosophy of my set up is to add things as I need them, there's no point in downloading/configuring something I don't use. I've started with the basic config files of the packages I use slowly modifying them how I like them. Recently (around November 2026) I've been wanting to migrate the same setup to a different machine, so that's why I've made this repo
 
 ## Visuals:
-![Whale1](Pictures/Screenshots/Screenshot_whale_1.png)
-![Whale2](Pictures/Screenshots/Screenshot_whale_2.png)
-![Flamingoes1](Pictures/Screenshots/Screenshot_flamingos_1.png)
-![Flamingoes2](Pictures/Screenshots/Screenshot_flamingos_2.png)
+![Whale1](Pictures/Screenshots/first_rice/Screenshot_whale_1.png)
+![Whale2](Pictures/Screenshots/first_rice/Screenshot_whale_2.png)
+![Flamingoes1](Pictures/Screenshots/first_rice/Screenshot_flamingos_1.png)
+![Flamingoes2](Pictures/Screenshots/first_rice/Screenshot_flamingos_2.png)
 
 ## How It's Made:
 To actually make it into a repo I was originally just going to do symlinks but after further reading I decided on a different method. I found a paper written by durdn (linked below) that had a much more elegant method which taught me even more about Git! The basics of it is just that you create a bare repository and use your home directory as the working tree. All the weird quirks of it are mostly solved by durdn, so if you have more questions I recommend reading it.
