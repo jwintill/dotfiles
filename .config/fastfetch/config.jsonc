@@ -1,0 +1,31 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "small",
+    "color": {
+      "1": "31",
+      "2": "31"
+    }
+  },
+  "display": {
+    "color": {
+      "keys": "31",
+      "title": "31"
+    }
+  },
+  "modules": [
+    
+    "title",
+    "os",
+    {
+     "type": "packages",
+     "key": "Packages",
+     "format": "total: {all}"
+    },
+    "uptime",
+    "wm",
+    "kernel",
+    "memory",
+    "break"
+  ]
+}
