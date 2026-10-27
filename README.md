@@ -28,6 +28,7 @@ Shell: Bash
 Themes/Colors: Pywal16
 **The rest of my packages**
  - under construction here lol
+
 I also installed some fonts I needed for school (Times New Roman) that are in this repo at .local/share/fonts
 
 ## How to install onto a new system
