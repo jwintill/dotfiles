@@ -8,11 +8,11 @@ I installed Arch Linux on my laptop in June 2026 and I've added my own customiza
 ![Flamingoes2](Pictures/Screenshots/first_rice/Screenshot_flamingos_2.png)
 
 ## How It's Made:
-To actually make it into a repo I was originally just going to do symlinks but after further reading I decided on a different method. I found a paper written by durdn (linked below) that had a much more elegant method which taught me even more about Git! The basics of it is just that you create a bare repository and use your home directory as the working tree. All the weird quirks of it are mostly solved by durdn, so if you have more questions I recommend reading it.
+To actually make it into a repo I was originally just going to do symlinks but after further reading I decided on a different method. I found a post written by durdn (linked below) that had a much more elegant method which taught me even more about Git! The basics of it is just that you create a bare repository and use your home directory as the working tree. All the weird quirks of it are mostly solved by durdn, so if you have more questions I recommend reading it.
 
 The core of the setup is i3 as the window manager and Arch Linux as the OS. I used i3 because I hadn't heard of Sway (I'll migrate eventually) and I originally installed KDE Plasma but I wanted something more lightweight and keyboard driven that had better support for tiling windows. I realized if I just switched DEs I'd get exactly what I wanted, so I did. Then I wanted to change my wallpaper a lot and needed something to change my colorscheme to match so I downloaded pywal16 to get all of the colors to automatically switch.
 
-**Link to durdn's paper:** https://www.atlassian.com/git/tutorials/dotfiles
+**Link to durdn's post:** https://www.atlassian.com/git/tutorials/dotfiles
 
 ## All packages
 Operating System: Arch Linux
@@ -32,4 +32,4 @@ Themes/Colors: Pywal16
 I also installed some fonts I needed for school (Times New Roman) that are in this repo at .local/share/fonts
 
 ## How to install onto a new system
-Read the linked paper! He describes it very well already so I'm not going to go through the trouble of putting it into my own words here.
+Read the linked post! He describes it very well already so I'm not going to go through the trouble of putting it into my own words here.
