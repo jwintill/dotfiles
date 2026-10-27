@@ -1,0 +1,21 @@
+#!/bin/sh
+
+OUTPUT="eDP-1"
+STEP="$1"
+
+CURRENT=$(xrandr --verbose |
+    sed -n "/^$OUTPUT connected/,/^.* disconnected/p" |
+    awk '/Brightness:/ { print $2; exit }')
+
+# Use 1.0 if xrandr does not report a current value
+CURRENT=${CURRENT:-1.0}
+
+NEW=$(awk -v current="$CURRENT" -v step="$STEP" '
+BEGIN {
+    value = current + step
+    if (value > 1) value = 1
+    if (value < 0) value = 0
+    printf "%.2f\n", value
+}')
+
+xrandr --output "$OUTPUT" --brightness "$NEW"
