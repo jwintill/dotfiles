@@ -1,0 +1,7 @@
+XTerm*Background: #111111
+XTerm*Foreground: white
+XTerm*faceName: JetBrainsMono Nerd Font Mono
+XTerm*faceSize: 11
+XTerm*VT100.translations: #override \
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+  Ctrl Shift <Key>C: copy-selection(CLIPBOARD)
