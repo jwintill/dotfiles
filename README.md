@@ -1,5 +1,5 @@
 # Dotfiles for my Linux rice
-I installed Arch Linux on my laptop in June 2026 and I've added my own customizations as I've gone. The main philosophy of my set up is to add things as I need them, there's no point in downloading/configuring something I don't use. I've started with the basic config files of the packages I use slowly modifying them how I like them. Recently (around November 2026) I've been wanting to migrate the same setup to a different machine, so that's why I've made this repo
+I installed Linux on my laptop in June 2026 and I've added my own customizations as I've gone. The main philosophy of my set up is to add things as I need them, there's no point in downloading/configuring something I don't use. I've started with the basic config files of the packages I use slowly modifying them how I like them. Recently (around November 2026) I've been wanting to migrate the same setup to a different machine, so that's why I've made this repo
 
 ## Visuals:
 ![Whale1](Pictures/Screenshots/first_rice/Screenshot_whale_1.png)
@@ -15,19 +15,18 @@ The core of the setup is i3 as the window manager and Arch Linux as the OS. I us
 **Link to durdn's post:** https://www.atlassian.com/git/tutorials/dotfiles
 
 ## All packages
-Operating System: Arch Linux
-Display Server: X11
-Desktop Environment/Window Manager: i3wm
-Terminal: Xterm
-Status bar: Polybar
-Compositor: Picom
-Text Editor/IDE: Neovim
-Display Manager: Don't need it
-Notification Mananger: Dunst
-Shell: Bash
-Themes/Colors: Pywal16
-**The rest of my packages**
- - under construction here lol
+- Operating System: [Arch Linux] (https://wiki.archlinux.org/title/Installation_guide)
+- Display Server: X11
+- Desktop Environment/Window Manager: [i3wm] (https://i3wm.org/downloads/)
+- Terminal: Xterm
+- Status bar: Polybar
+- Compositor: Picom
+- Text Editor/IDE: Neovim
+- Display Manager: Don't need it
+- Notification Mananger: Dunst
+- Shell: Bash
+- Themes/Colors: Pywal16
+All of the required packages are [here](packages.txt)
 
 I also installed some fonts I needed for school (Times New Roman) that are in this repo at .local/share/fonts
 
