@@ -25,10 +25,11 @@ The core of the setup is i3 as the window manager and Arch Linux as the OS. I us
 - Display Manager: Don't need it
 - Notification Mananger: Dunst
 - Shell: Bash
-- Themes/Colors: Pywal16
-All of the required packages are [here](packages.txt)
+- Themes/Colors: [Pywal16](https://github.com/eylles/pywal16)
+All of the required packages are [here](./.config/packages/base.txt)
+Optional packages that I use often are [here](./.config/packages/optional.txt)
 
-I also installed some fonts I needed for school (Times New Roman) that are in this repo at .local/share/fonts
+I also installed some fonts I needed for school (Times New Roman) that are [here](./.local/share/fonts)
 
 ## How to install onto a new system
 Read the linked post! He describes it very well already so I'm not going to go through the trouble of putting it into my own words here.
