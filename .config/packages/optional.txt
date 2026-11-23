@@ -20,4 +20,3 @@ rtaudio
 shotcut
 spotify-launcher
 w3m
-wl-clipboard

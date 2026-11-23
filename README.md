@@ -9,17 +9,19 @@ I installed Linux on my laptop in June 2026 and I've added my own customizations
 ## How It's Made:
 To actually make it into a repo I was originally just going to do symlinks but after further reading I decided on a different method. I found a post written by durdn (linked below) that had a much more elegant method which taught me even more about Git! The basics of it is just that you create a bare repository and use your home directory as the working tree. All the weird quirks of it are mostly solved by durdn, so if you have more questions I recommend reading it.
 
-The core of the setup is i3 as the window manager and Arch Linux as the OS. I used i3 because I hadn't heard of Sway (I'll migrate eventually) and I originally installed KDE Plasma but I wanted something more lightweight and keyboard driven that had better support for tiling windows. I realized if I just switched DEs I'd get exactly what I wanted, so I did. Then I wanted to change my wallpaper a lot and needed something to change my colorscheme to match so I downloaded pywal16 to get all of the colors to automatically switch.
-
 **Link to durdn's post:** https://www.atlassian.com/git/tutorials/dotfiles
+
+The core of the setup is sway as the window manager and Arch Linux as the OS. I used i3 because I hadn't heard of Sway and I originally installed KDE Plasma but I wanted something more lightweight and keyboard driven that had better support for tiling windows. I realized if I just switched DEs I'd get exactly what I wanted, so I did. Then I wanted to change my wallpaper a lot and needed something to change my colorscheme to match so I downloaded pywal16 to get all of the colors to automatically switch. After a while of i3 + pywal16 I wanted to migrate to Wayland as it has more support and is just better than X11, the weird colorschemes of pywal were also making my eyes hurt with extended use so I just changed everything to Gruvbox.
+
+#### In the future
+I enjoy minimalist setups visually but it doesn't mean I won't add anything heavy if it looks real nice. I want to move by bar to the side and add quickshell everywhere just to make it pop a little more. One big caveat is that I still want it to be keyboard driven otherwise I'm not doing this.
 
 ## All packages
 - Operating System: [Arch Linux](https://wiki.archlinux.org/title/Installation_guide)
-- Display Server: X11
-- Desktop Environment/Window Manager: [i3wm](https://i3wm.org/downloads/)
-- Terminal: Xterm
-- Status bar: Polybar
-- Compositor: Picom
+- Display Server: Wayland
+- Desktop Environment/Window Manager: [sway](https://github.com/swaywm/sway)
+- Terminal: Foot
+- Status bar: Waybar
 - Text Editor/IDE: Neovim
 - Display Manager: Don't need it
 - Notification Mananger: Dunst
