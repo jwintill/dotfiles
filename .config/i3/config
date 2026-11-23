@@ -1,5 +1,5 @@
 # variable for wallpaper
-set $wallpaper /home/$USER/Pictures/Wallpapers/condor.jpg
+set $wallpaper /home/$USER/Pictures/Wallpapers/kitten2.jpg
 
 # Mod Key set to Alt
 set $mod Mod1
@@ -13,8 +13,8 @@ font pango:monospace 8
 #caps lock to esc and esc to caps lock
 exec_always --no-startup-id setxkbmap -option caps:swapescape
 
-#set wallpaper through wal to have colors update automatically
-exec_always --no-startup-id wal -i $wallpaper
+# set wallpaper through wal to have colors update automatically
+# exec_always --no-startup-id wal -i $wallpaper
 exec_always --no-startup-id feh --bg-fill $wallpaper
 
 # apps to execute on startup
@@ -33,12 +33,13 @@ exec --no-startup-id dbus-update-activation-environment --systemd DISPLAY XAUTHO
 #styling
 gaps inner 10
 gaps outer 5
-set_from_resource $fg i3wm.color7 #f0f0f0
-set_from_resource $bg i3wm.color2 #f0f0f0
+set_from_resource $bg i3wm.color0 #282828
+set_from_resource $fg i3wm.color15 #ebdbb2
+set_from_resource $accent i3wm.color11 #fabd2f
 client.focused #D18460 #444444 #ffffff #ffffff #222222
 client.unfocused #222222 #444444 #ffffff #ffffff #222222
-default_border pixel 1
-default_floating_border pixel 1
+default_border pixel 0
+default_floating_border pixel 0
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -73,7 +74,7 @@ bindsym $mod+g exec $browser
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run -nb "$bg" -nf "$fg" -sb "$bg" -sf "$fg"
+bindsym $mod+d exec --no-startup-id dmenu_run -nb "$bg" -nf "$fg" -sb "$accent" -sf "$bg"
 
 # change focus
 bindsym $mod+h focus left

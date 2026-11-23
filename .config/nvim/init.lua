@@ -27,6 +27,7 @@ opt.clipboard:append("unnamedplus")
 -- plugins (vim-plug)
 local Plug = vim.fn["plug#"]
 vim.call("plug#begin")
+Plug("morhetz/gruvbox")
 Plug("dylanaraps/wal.vim")
 Plug("MeanderingProgrammer/render-markdown.nvim")
 Plug("MunifTanjim/nui.nvim")
@@ -49,4 +50,4 @@ opt.foldlevelstart = 99
 
 -- colorscheme for nvim
 vim.o.termguicolors = true
-vim.cmd.colorscheme("habamax")
+vim.cmd.colorscheme("gruvbox")

@@ -1,2 +1,2 @@
-wal -R
+xrdb -merge ~/.Xdefaults
 exec i3
