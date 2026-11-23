@@ -15,7 +15,7 @@ alias gwenview='flatpak run org.kde.gwenview 2>/dev/null'
 # (cat ~/.cache/wal/sequences &)
 
 # export Xdefaults
-xrdb -merge ~/.Xdefaults
+# xrdb -merge ~/.Xdefaults
 
 # enalbe Bitwarden SSH Agent
 export SSH_AUTH_SOCK=/home/jonny/.bitwarden-ssh-agent.sock

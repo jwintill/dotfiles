@@ -1,0 +1,67 @@
+/* Gruvbox Color Palette */
+@define-color background     #282828;
+@define-color background-alt #504945;
+@define-color foreground     #ebdbb2;
+@define-color foreground-alt #a89984;
+@define-color primary        #fabd2f;
+@define-color secondary      #8ec07c;
+@define-color alert          #fb4934;
+@define-color disabled       #928374;
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: monospace;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: @background;
+    color: @foreground;
+    padding-right: 8px;
+}
+
+/* Workspaces */
+#workspaces button {
+    padding: 0 8px;
+    background-color: transparent;
+    color: @foreground;
+    border-bottom: 2px solid transparent;
+}
+
+#workspaces button.focused {
+    background-color: @background-alt;
+    border-bottom: 2px solid @primary;
+}
+
+#workspaces button.urgent {
+    background-color: @alert;
+    color: @foreground;
+}
+
+/* Window Title */
+#window {
+    padding: 0 10px;
+}
+
+/* Right-side Modules & Separators */
+#pulseaudio,
+#memory,
+#cpu,
+#network,
+#battery,
+#tray,
+#clock {
+    padding: 0 6px;
+}
+
+#clock {
+    color: @primary;
+    padding-right: 10px;
+}
+
+#custom-sep {
+    color: @disabled;
+    padding: 0 2px;
+}

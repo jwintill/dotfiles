@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# Directory where recordings will be saved
+SAVE_DIR="$HOME/Videos/Recordings"
+mkdir -p "$SAVE_DIR"
+
+# If wf-recorder is already running, send SIGINT (Ctrl+C equivalent) to finalize the video cleanly
+if pgrep -x "wf-recorder" >/dev/null; then
+    pkill -SIGINT -x "wf-recorder"
+    notify-send -u normal "Screen Recording" "Recording stopped and saved to $SAVE_DIR"
+    exit 0
+fi
+
+# Prompt for region selection using slurp (matches your screenshot workflow)
+GEOMETRY=$(slurp)
+
+# Exit quietly if the user cancelled slurp with Escape
+if [ -z "$GEOMETRY" ]; then
+    exit 1
+fi
+
+FILENAME="$SAVE_DIR/Recording_$(date +%Y%m%d_%H%M%S).mp4"
+
+notify-send -u low "Screen Recording" "Recording started..."
+
+# Start recording (add -a for system audio via PipeWire/PulseAudio)
+wf-recorder -g "$GEOMETRY" -f "$FILENAME" &
