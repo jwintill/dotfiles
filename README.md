@@ -14,9 +14,9 @@ The core of the setup is i3 as the window manager and Arch Linux as the OS. I us
 **Link to durdn's post:** https://www.atlassian.com/git/tutorials/dotfiles
 
 ## All packages
-- Operating System: [Arch Linux] (https://wiki.archlinux.org/title/Installation_guide)
+- Operating System: [Arch Linux](https://wiki.archlinux.org/title/Installation_guide)
 - Display Server: X11
-- Desktop Environment/Window Manager: [i3wm] (https://i3wm.org/downloads/)
+- Desktop Environment/Window Manager: [i3wm](https://i3wm.org/downloads/)
 - Terminal: Xterm
 - Status bar: Polybar
 - Compositor: Picom
